@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, p, input, button{
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --primary-color:#6a89cc;
+}
+#background{
+    background: url("../assets/background.jpg") no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 10%;
+}
+#content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+    #content #box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 15px 15px 30px black;
+        width: 300px;
+        height: 0px;
+        overflow: hidden;
+        animation-name: start;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    #content #box h1{
+        color:var(--primary-color);
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    #content #box input{
+        border-radius: 15px;
+        outline: none;
+        border:none;
+        background-color: var(--primary-color);
+        font-size: 26px;
+        color:white;
+        text-align: center;
+        box-sizing: border-box;
+        width: 50px;
+        transition:300ms;
+        margin-bottom: 10px;
+    }
+    #content #box input:focus{
+        width: 200px;
+    }
+    #content #box input::placeholder{
+        color: white;
+        opacity: 30%;
+    }
+    #content #box button{
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 15px;
+        width: 80px;
+        height: 25px;
+        outline: none;
+        border:none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 200ms;
+    }
+    #content #box button:hover{
+        background-color: #4a69bd;
+        width: 100px;
+    }
+    #content #box p{
+        color: var(--primary-color);
+        font-size: 20px;
+        font-family: 'Fira Code', monospace;
+    }
+#credits{
+    position: absolute;
+    text-align: center;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;;
+    color: var(--primary-color)
+}
+@keyframes start{
+    from{height: 0px;}
+    to{height: 170px;}
+}
