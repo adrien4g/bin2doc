@@ -99,7 +99,7 @@ h1, p, input, button, h3{
 #credits{
     position: absolute;
     text-align: center;
-    bottom: 4px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 700;;
