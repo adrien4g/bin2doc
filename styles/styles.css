@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-h1, p, input, button{
+h1, p, input, button, h3{
     font-family: 'Ubuntu', sans-serif;
 }
 :root{
@@ -46,6 +46,12 @@ h1, p, input, button{
     #content #box h1{
         color:var(--primary-color);
         font-size: 34px;
+        margin-bottom: 5px;
+    }
+    #content #box h3{
+        font-size: 15px;
+        color: var(--primary-color);
+        text-align: center;
         margin-bottom: 15px;
     }
 
@@ -101,5 +107,5 @@ h1, p, input, button{
 }
 @keyframes start{
     from{height: 0px;}
-    to{height: 170px;}
+    to{height: 200px;}
 }
