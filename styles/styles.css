@@ -16,7 +16,8 @@ h1, p, input, button, h3{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    opacity: 10%;
+    opacity: 80%;
+    
 }
 #content {
     position: absolute;
@@ -103,7 +104,7 @@ h1, p, input, button, h3{
     left: 50%;
     transform: translateX(-50%);
     font-weight: 700;;
-    color: var(--primary-color)
+    color: white;
 }
 @keyframes start{
     from{height: 0px;}
