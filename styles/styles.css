@@ -69,7 +69,10 @@ h1, p, input, button, h3{
         transition:300ms;
         margin-bottom: 10px;
     }
-    #content #box input:focus{
+    #content #box #input:hover{
+        width: 100px;
+    }
+    #content #box #input:focus{
         width: 200px;
     }
     #content #box input::placeholder{
